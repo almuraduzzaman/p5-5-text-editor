@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/ac4802a9b7.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="h-screen bg-red-500 flex justify-center items-center">
+
+    <section class="bg-red-200 w-9/12 mx-auto h-4/6 drop-shadow-xl rounded-md">
+        <!-- title  -->
+        <h1 class="text-center text-xl font-bold mt-5">My Own <span class="text-red-500">Text Editor</span></h1>
+
+        <!-- toolbar -->
+        <div class="border-solid border-2 m-2 p-2 gap-4 md:flex justify-center md:justify-around items-center">
+            <div class="flex justify-center gap-4 mb-2 md:mb-0">
+                <button id="btn-reset"><i class="fa-regular fa-circle-xmark"></i></button>
+                <button id="btn-bold"><i class="fa-solid fa-bold p-2"></i></button>
+                <button id="btn-italic"><i class="fa-solid fa-italic p-2"></i></button>
+                <button id="btn-underline"><i class="fa-solid fa-underline p-2"></i></button>
+            </div>
+
+            <div class="flex justify-center gap-4 mb-2 md:mb-0">
+                <button id="btn-left"><i class="fa-solid fa-align-left p-2"></i></button>
+                <button id="btn-justify"><i class="fa-solid fa-align-justify p-2"></i></button>
+                <button id="btn-center"><i class="fa-solid fa-align-center p-2"></i></button>
+                <button id="btn-right"><i class="fa-solid fa-align-right p-2"></i></button>
+            </div>
+
+            <div class="flex justify-center items-center gap-4 mb-2 md:mb-0">
+                <input class="w-14 pl-2" type="number" value="16" id="text-sizing">
+                <button id="capitalization" class="p-2"><b>aA</b></button>
+                <input type="color" name="" id="color-change">
+            </div>
+        </div>
+
+        <!-- textarea  -->
+
+        <textarea name="" id="textarea" class="h-1/2 w-full p-2 resize-none" spellcheck="false"></textarea>
+
+        <!-- copyright -->
+        <p class="text-center text-red-400 p-2">&copy;All Right Reserved By Murad</p>
+
+
+    </section>
+    <script src="function.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
